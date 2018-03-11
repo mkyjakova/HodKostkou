@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://thymeleag.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java 2</title>
+</head>
+<body>
+
+    <h1>Simulátor kostky</h1>
+
+    Hozeno na kostce: <span th:text="${hozeno}">99</span>
+
+    <img th:src="${'kostka'+ hozeno + '.png'}"
+        src="kostka1.png"/>
+
+    <p th:text="${vyrok}">
+        Text  vyroku
+    </p>
+
+</body>
+</html>
